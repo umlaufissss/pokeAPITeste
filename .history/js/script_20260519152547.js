@@ -39,7 +39,6 @@ const renderPokemon = async(pokemon) =>
         pokemonImg.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
 
         input.value = '';
-        searchPokemon = data.id;
     }
     else
     {
@@ -62,8 +61,7 @@ buttonPrev.addEventListener('click', () =>
 {
     if(searchPokemon >1)
     {
-        searchPokemon -=1
-        renderPokemon(searchPokemon);
+        
     }
 }
 );
